@@ -43,20 +43,6 @@ These three metrics provide a composite view of customer value and engagement.
 - **Preprocessing**: The RFM features were standardized using `StandardScaler` to ensure each feature contributes equally to the distance calculations.
 - **Optimal Clusters (k)**: The Elbow Method and Silhouette Score were used to determine the optimal number of clusters, balancing interpretability and cluster quality.
 
-## 📈 Results
-After applying K-Means clustering, customers were segmented into distinct groups. While the exact number of clusters is determined in the notebook, typical segments include:
-- **Champions**: Best customers (high R, F, M).
-- **Loyal Customers**: Make regular purchases (high F, good M and R).
-- **At-Risk Customers**: Customers who were once good but haven't purchased recently (low R, but historically good F/M).
-- **New Customers**: Recent purchasers who haven't bought frequently yet (high R, low F).
-- **Lost Customers**: Worst customers (low R, F, M).
-
-These segments allow for targeted business strategies:
-- **Champions**: Reward them, ask for reviews, offer loyalty programs.
-- **Loyal Customers**: Upsell higher-value products and keep them engaged.
-- **At-Risk Customers**: Send win-back campaigns and renewal offers.
-- **New Customers**: Provide onboarding support and introductory offers.
-
 ## 📁 Project Structure
 ```
 online-retail-segmentation/
